@@ -18,16 +18,15 @@ body{
 }
 
 .container {
-    width:600px;
-    max-width:80%;
+    width:500px;
     background-color:white;
     padding:10px;
     border-radius:5px;
-    box-shadow: 0 0 10px 2px;
+    box-shadow: 0 0 10px 4px;
 }
 
 .container p{
-    margin:0 100px 0 100px;
+    margin:0 50px 0 50px;
     font-size: 1.4rem;
     font-variant: small-caps;
     letter-spacing: 1px;
@@ -40,6 +39,11 @@ form {
 }
 
 input{
-    width:80%;
+    width:400px;
     letter-spacing: 1px;
+    box-shadow: 0 0 3px black;
+}
+
+input:hover {
+    box-shadow: 0 0 5px black;
 }
