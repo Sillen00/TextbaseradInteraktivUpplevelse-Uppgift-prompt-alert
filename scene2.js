@@ -21,7 +21,7 @@ function loadScene2() {
     };
     
     if(hasFriendsDykartubBeenPickedUp === true){
-        optionButtonElement1.textContent = "Behåll kompisens dykartub";
+        optionButtonElement1.textContent = "Behåll din bästa kompis dykartub";
         optionButtonElement1.addEventListener("click", loadScene3);
 
         optionButtonElement2.textContent = "Byt mot treudd";
@@ -32,7 +32,6 @@ function loadScene2() {
         optionButtonElement3.style.display = "block";
         optionButtonElement3.textContent = "Byt mot sköld";
         optionButtonElement3.addEventListener("click", bytteMotSkold);
-        
     };
 };
 
