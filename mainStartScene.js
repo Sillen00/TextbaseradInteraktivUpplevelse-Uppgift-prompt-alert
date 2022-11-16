@@ -6,6 +6,8 @@ let textElement;
 let optionButtonElement1;
 /**@type {HTMLButtonElement} Button option 2 */
 let optionButtonElement2;
+/**@type {HTMLButtonElement} Button option 3 */
+let optionButtonElement3;
 /**@type {Boolean} Berättar om du tog upp dykartuben eller inte */
 let hasFriendsDykartubBeenPickedUp = false;
 
@@ -20,6 +22,7 @@ function loadHtmlElements(){
     textElement = document.getElementById("text");
     optionButtonElement1 = document.getElementById("option-btn-1");
     optionButtonElement2 = document.getElementById("option-btn-2");
+    optionButtonElement3 = document.getElementById("option-btn-3");
 };
 
 
@@ -31,6 +34,8 @@ function loadStartScene(){
     
     optionButtonElement2.textContent = "Lämna dykartuben";
     optionButtonElement2.addEventListener("click", loadScene2);
+
+    optionButtonElement3.style.display = "none";
 };
 
 /** Du har plockat upp din kompis dykartub */

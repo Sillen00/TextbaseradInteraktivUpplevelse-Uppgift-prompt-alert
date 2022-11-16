@@ -1,3 +1,7 @@
+
+let bytteSkoldMotTub = false;
+let bytteTreuddMotTub = false;
+
 /**Laddar in scen 2. Ser olika ut beroende på vad du gjort innan.*/
 function loadScene2() {
     
@@ -11,26 +15,28 @@ function loadScene2() {
         optionButtonElement2.addEventListener("click", cantBreathWithoutTube);
         
         //Extra option knapp3
-        const optionButton3 = document.createElement("button");
-        optionButton3.innerText = "Byt inget";
-        optionButton3.classList.add("btn");
-        const divButtons = document.getElementById("option-buttons");
-        divButtons.appendChild(optionButton3);
-        optionButton3.addEventListener("click", angryMermaid)
+        optionButtonElement3.style.display = "block";
+        optionButtonElement3.textContent = "Byt inget";        
+        optionButtonElement3.addEventListener("click", angryMermaid)
     };
     
     if(hasFriendsDykartubBeenPickedUp === true){
         optionButtonElement1.textContent = "Behåll kompisens dykartub";
+        optionButtonElement1.addEventListener("click", loadScene3);
+
         optionButtonElement2.textContent = "Byt mot treudd";
+        optionButtonElement2.addEventListener("click", bytteMotTreudd);
+
         
-        //Extra option knapp4
-        const optionButton4 = document.createElement("button");
-        optionButton4.innerText = "Byt mot sköld"
-        optionButton4.classList.add("btn")
-        const divButtons = document.getElementById("option-buttons")
-        divButtons.appendChild(optionButton4);
+        //Extra option knapp3
+        optionButtonElement3.style.display = "block";
+        optionButtonElement3.textContent = "Byt mot sköld";
+        optionButtonElement3.addEventListener("click", bytteMotSkold);
+        
     };
 };
+
+//Först if satsen ovan
 
 /**Lämnar du din egna tub till sjöljungfru är du död. */
 function cantBreathWithoutTube() {
@@ -42,5 +48,17 @@ function angryMermaid(){
     document.getElementById("option-buttons").replaceWith("");
     textElement. textContent = "Sjöljungs frun blir sur och låter dig inte fortsätta ner i grottan... 'ctrl + r' för att börja om.";
 };
+
+//Andra if satsen ovan
+
+function bytteMotTreudd(){
+    bytteTreuddMotTub === true;
+    loadScene3();
+}
+function bytteMotSkold(){
+    bytteSkoldMotTub === true;
+    loadScene3();
+}
+
 
 
