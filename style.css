@@ -51,7 +51,7 @@ h1{
 
 }
 
-#option-btn-1, #option-btn-2{
+.btn{
     background-color: rgb(127, 255, 212);
     border: 1px solid rgb(2, 189, 17);
     border-radius: 6px;
@@ -59,6 +59,6 @@ h1{
     font-size: 1.2rem;
 }
 
-#option-btn-1:hover, #option-btn-2:hover{
+.btn:hover{
     border-color: black;
 }
