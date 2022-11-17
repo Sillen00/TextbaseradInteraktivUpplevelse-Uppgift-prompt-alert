@@ -35,5 +35,18 @@ function anvandeTreudd(){
 };
 function anvandeTub(){
     textElement.textContent = "Dykartuben glider fram mot hajen och precis bredvid hajen, tack vare övertrycket i tuben exploderar den och dödar hajen."
+    
+    optionButtonElement1.textContent = "Fortsätt"
+    optionButtonElement1.addEventListener("click", slutScene)
+};
+
+
+
+
+function slutScene(){
+    document.getElementById("option-buttons").replaceWith("");
+    document.body.style.backgroundImage = "url('/images/Grotta-under-vatten.jpg')";
+
+    textElement.textContent = "Efter att tagit dig förbi hajen hittar du din bästa kompis i en undervattens grotta. Ni delar på det sista luften som är kvar i din dykartub och tar er snabbaste vägen, precis ut och upp till ytan och lever lyckliga i alla sina dagar.";
 
 };
