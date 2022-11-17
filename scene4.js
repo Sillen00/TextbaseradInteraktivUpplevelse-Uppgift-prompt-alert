@@ -34,7 +34,7 @@ function anvandeTreudd(){
     textElement.textContent = "Trodde du verkligen att hajen skulle dö av treudden. Hajen biter av treudden på mitten. 'ctrl + r' för att börja om."
 };
 function anvandeTub(){
-    textElement.textContent = "Dykartuben glider fram mot hajen och precis bredvid hajen, tack vare övertrycket i tuben exploderar den och dödar hajen."
+    textElement.textContent = "Dykartuben glider fram till hajen. Tuben har ett rejält övertrycket och i perfekt timing exploderar tuben och dödar hajen."
     
     optionButtonElement1.textContent = "Fortsätt"
     optionButtonElement1.onclick = slutScene;
