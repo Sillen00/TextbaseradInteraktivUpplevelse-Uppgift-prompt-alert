@@ -18,6 +18,7 @@ function main() {
     loadStartScene();
 };
 
+/**Hämtar alla htmlelement från documentet och sparar de i variabler. */
 function loadHtmlElements(){
     textElement = document.getElementById("text");
     optionButtonElement1 = document.getElementById("option-btn-1");

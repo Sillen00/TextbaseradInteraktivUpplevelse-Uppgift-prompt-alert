@@ -1,3 +1,4 @@
+/**Du hittar Guldet! Vill du rädd din kompis eller ta guldet. */
 function loadScene3(){
     optionButtonElement3.style.display = "none";
 
@@ -12,13 +13,8 @@ function loadScene3(){
 
 
 
-
+// Du tog pengar istället för att rädd din bästa kompis. 
 function pengaKot(){
     document.getElementById("option-buttons").replaceWith("");
     textElement.textContent = "Du tog guldet men nu har du ingen att spendera pengarna tillsammans med............... :( 'ctrl + r' för att börja om.";
-};
-
-
-function loadScene4(){
-    
 };

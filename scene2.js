@@ -1,6 +1,7 @@
 
 let bytteSkoldMotTub = false;
 let bytteTreuddMotTub = false;
+let bytteInget = false;
 
 /**Laddar in scen 2. Ser olika ut beroende på vad du gjort innan.*/
 function loadScene2() {
@@ -22,7 +23,7 @@ function loadScene2() {
     
     if(hasFriendsDykartubBeenPickedUp === true){
         optionButtonElement1.textContent = "Behåll din bästa kompis dykartub";
-        optionButtonElement1.addEventListener("click", loadScene3);
+        optionButtonElement1.addEventListener("click", behollDykartub);
 
         optionButtonElement2.textContent = "Byt mot treudd";
         optionButtonElement2.addEventListener("click", bytteMotTreudd);
@@ -34,6 +35,7 @@ function loadScene2() {
         optionButtonElement3.addEventListener("click", bytteMotSkold);
     };
 };
+
 
 //Först if satsen ovan
 
@@ -48,16 +50,21 @@ function angryMermaid(){
     textElement. textContent = "Sjöljungs frun blir sur och låter dig inte fortsätta ner i grottan... 'ctrl + r' för att börja om.";
 };
 
+
+
 //Andra if satsen ovan
 
 function bytteMotTreudd(){
-    bytteTreuddMotTub === true;
+    bytteTreuddMotTub = true;
     loadScene3();
 }
 function bytteMotSkold(){
-    bytteSkoldMotTub === true;
+    bytteSkoldMotTub = true;
     loadScene3();
 }
 
-
+function behollDykartub(){
+    bytteInget = true;
+    loadScene3();
+}
 
