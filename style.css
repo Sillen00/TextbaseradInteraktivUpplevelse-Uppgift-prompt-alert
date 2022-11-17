@@ -39,6 +39,7 @@ h1{
     padding:10px;
     border-radius:5px;
     box-shadow: 0 0 10px 4px;
+    margin-top: 200px;
 }
 
 .container p{
@@ -66,4 +67,20 @@ h1{
 
 .btn:hover{
     border-color: black;
+}
+
+
+@media screen and (max-width: 872px) {
+    h1{
+        top: 1.6rem;
+        font-size: 23px;
+    }
+    .container{
+        margin-top: 0px;
+    }
+    .container p{
+        letter-spacing: 0;
+        word-spacing: 1px;
+        font-size: 1.2rem;
+    }
 }
