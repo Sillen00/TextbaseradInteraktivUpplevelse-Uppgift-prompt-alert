@@ -15,7 +15,7 @@ function loadScene2() {
         optionButtonElement2.textContent = "Byt din egna dykartub mot sköld";
         optionButtonElement2.onclick = cantBreathWithoutTube;
         
-        //Extra option knapp3
+
         optionButtonElement3.style.display = "block";
         optionButtonElement3.textContent = "Byt inget";        
         optionButtonElement3.onclick = angryMermaid
@@ -29,7 +29,6 @@ function loadScene2() {
         optionButtonElement2.onclick = bytteMotTreudd;
 
         
-        //Extra option knapp3
         optionButtonElement3.style.display = "block";
         optionButtonElement3.textContent = "Byt mot sköld";
         optionButtonElement3.onclick = bytteMotSkold;
@@ -52,7 +51,7 @@ function angryMermaid(){
 
 
 
-//Andra if satsen ovan
+//onclick från andra if satsen ovan.
 
 function bytteMotTreudd(){
     bytteTreuddMotTub = true;
