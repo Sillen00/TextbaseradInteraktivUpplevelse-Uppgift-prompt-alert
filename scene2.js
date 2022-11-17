@@ -10,29 +10,29 @@ function loadScene2() {
     
     if(hasFriendsDykartubBeenPickedUp === false){
         optionButtonElement1.textContent = "Byt din egna dykartub mot treudd";
-        optionButtonElement1.addEventListener("click", cantBreathWithoutTube);
+        optionButtonElement1.onclick = cantBreathWithoutTube;
         
         optionButtonElement2.textContent = "Byt din egna dykartub mot sköld";
-        optionButtonElement2.addEventListener("click", cantBreathWithoutTube);
+        optionButtonElement2.onclick = cantBreathWithoutTube;
         
         //Extra option knapp3
         optionButtonElement3.style.display = "block";
         optionButtonElement3.textContent = "Byt inget";        
-        optionButtonElement3.addEventListener("click", angryMermaid)
+        optionButtonElement3.onclick = angryMermaid
     };
     
     if(hasFriendsDykartubBeenPickedUp === true){
         optionButtonElement1.textContent = "Behåll din bästa kompis dykartub";
-        optionButtonElement1.addEventListener("click", behollDykartub);
+        optionButtonElement1.onclick = behollDykartub;
 
         optionButtonElement2.textContent = "Byt mot treudd";
-        optionButtonElement2.addEventListener("click", bytteMotTreudd);
+        optionButtonElement2.onclick = bytteMotTreudd;
 
         
         //Extra option knapp3
         optionButtonElement3.style.display = "block";
         optionButtonElement3.textContent = "Byt mot sköld";
-        optionButtonElement3.addEventListener("click", bytteMotSkold);
+        optionButtonElement3.onclick = bytteMotSkold;
     };
 };
 

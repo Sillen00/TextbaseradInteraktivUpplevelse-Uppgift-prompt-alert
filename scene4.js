@@ -3,21 +3,21 @@ function loadScene4(){
 
     if(bytteSkoldMotTub === true){
         optionButtonElement1.textContent = "Göm dig bakom din sköld!";
-        optionButtonElement1.addEventListener("click", anvandeSkold)
+        optionButtonElement1.onclick = anvandeSkold;
         
         optionButtonElement2.style.display ="none";
     }
 
     else if(bytteTreuddMotTub === true){
         optionButtonElement1.textContent = "Göm dig bakom din Treudd!";
-        optionButtonElement1.addEventListener("click", anvandeTreudd)
+        optionButtonElement1.onclick = anvandeTreudd;
         
         optionButtonElement2.style.display ="none";
     }
 
     else if(bytteInget === true){
         optionButtonElement1.textContent = "Använd din tub för att få ett övertryck i kompisens tub och kasta den mot hajen"
-        optionButtonElement1.addEventListener("click", anvandeTub)
+        optionButtonElement1.onclick = anvandeTub;
     
         optionButtonElement2.style.display = "none";
     }
@@ -37,5 +37,5 @@ function anvandeTub(){
     textElement.textContent = "Dykartuben glider fram mot hajen och precis bredvid hajen, tack vare övertrycket i tuben exploderar den och dödar hajen."
     
     optionButtonElement1.textContent = "Fortsätt"
-    optionButtonElement1.addEventListener("click", slutScene)
+    optionButtonElement1.onclick = slutScene;
 };

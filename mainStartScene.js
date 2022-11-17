@@ -31,10 +31,10 @@ function loadHtmlElements(){
 function loadStartScene(){
     textElement.textContent = "Du och din bästa kompis har dykt i flera dagar i Egyptens grottor för att hitta en stor kista med guld. Du simmar in i ett litet hål för att se om skatten finns där. Du hittar inget och simmar ut igen och märker då att din bästis är borta. Du ser hens dykartub och bestämmer dig för att hitta din kompis. Vill ta med dig dykartuben eller lämna kvar den?";
     optionButtonElement1.textContent = "Ta med dykartuben";
-    optionButtonElement1.addEventListener("click", youPickedUpDykartub);
+    optionButtonElement1.onclick = youPickedUpDykartub;
     
     optionButtonElement2.textContent = "Lämna dykartuben";
-    optionButtonElement2.addEventListener("click", loadScene2);
+    optionButtonElement2.onclick = loadScene2;
 
     optionButtonElement3.style.display = "none";
 };
