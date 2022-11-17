@@ -24,7 +24,7 @@ function loadScene4(){
 };
 
 
-
+/**Bytte du tidigare mot slöld eller treudd så kommer du inte vidare. Tog du kompisens dykartub så kommer slut scenen*/
 function anvandeSkold(){
     document.getElementById("option-buttons").replaceWith("");
     textElement.textContent = "Hajen skrattar åt dig när du gömmer dig bakom skölden och äter dig. 'ctrl + r' för att börja om.";
@@ -38,15 +38,4 @@ function anvandeTub(){
     
     optionButtonElement1.textContent = "Fortsätt"
     optionButtonElement1.addEventListener("click", slutScene)
-};
-
-
-
-
-function slutScene(){
-    document.getElementById("option-buttons").replaceWith("");
-    document.body.style.backgroundImage = "url('/images/Grotta-under-vatten.jpg')";
-
-    textElement.textContent = "Efter att tagit dig förbi hajen hittar du din bästa kompis i en undervattens grotta. Ni delar på det sista luften som är kvar i din dykartub och tar er snabbaste vägen, precis ut och upp till ytan och lever lyckliga i alla sina dagar.";
-
 };
