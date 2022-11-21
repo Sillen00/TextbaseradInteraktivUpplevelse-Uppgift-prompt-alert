@@ -1,3 +1,5 @@
+
+/**Använd det du bytte sedan innan för att skydda dig mot hajen */
 function loadScene4(){
     textElement.textContent = "Du fortsätter leta och märker att du har fått ett meddelande från din kompis med hens koordinater! Du blir mycket glad och börjar simma mot koordinaterna. När du börjar närma dig kordinaterna möter du på en stor haj.";
 

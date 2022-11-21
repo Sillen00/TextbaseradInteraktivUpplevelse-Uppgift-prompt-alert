@@ -1,7 +1,10 @@
-
+/**@type {Boolean} Berättar om du bytte mot sköld eller inte */
 let bytteSkoldMotTub = false;
+/**@type {Boolean} Berättar om du bytte mot treudd eller inte */
 let bytteTreuddMotTub = false;
+/**@type {Boolean} Berättar om du valde att inte byta något alls */
 let bytteInget = false;
+
 
 /**Laddar in scen 2. Ser olika ut beroende på vad du gjort innan.*/
 function loadScene2() {
@@ -53,15 +56,19 @@ function angryMermaid(){
 
 //onclick från andra if satsen ovan.
 
+/**Du valde treudd och går vidare till scene3 */
 function bytteMotTreudd(){
     bytteTreuddMotTub = true;
     loadScene3();
 }
+
+/**Du valde sköld och går vidare till scene3 */
 function bytteMotSkold(){
     bytteSkoldMotTub = true;
     loadScene3();
 }
 
+/**Du valde inget och går vidare till scene3 */
 function behollDykartub(){
     bytteInget = true;
     loadScene3();
