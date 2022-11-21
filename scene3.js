@@ -15,6 +15,11 @@ function loadScene3(){
 
 /**Du tog pengar istället för att rädda din bästa kompis.*/ 
 function pengar(){
-    document.getElementById("option-buttons").replaceWith("");
-    textElement.textContent = "Du tog guldet men nu har du ingen att spendera pengarna tillsammans med............... :( 'ctrl + r' för att börja om.";
+    textElement.textContent = "Du tog guldet men nu har du ingen att spendera pengarna tillsammans med... :(";
+
+    optionButtonElement1.textContent = "Restart";
+    optionButtonElement1.onclick = loadStartScene;
+
+    optionButtonElement2.style.display = "none";
+    optionButtonElement3.style.display = "none";
 };

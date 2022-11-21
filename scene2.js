@@ -43,13 +43,23 @@ function loadScene2() {
 
 /**Lämnar du din egna tub till sjöljungfru är du död. */
 function cantBreathWithoutTube() {
-    document.getElementById("option-buttons").replaceWith("");
-    textElement. textContent = "Tyvärr lever du inte länge till utan dykartuben. 'ctrl + r' för att börja om.";
+    textElement. textContent = "Tyvärr lever du inte länge till utan dykartuben.";
+    optionButtonElement1.textContent = "Restart";
+    optionButtonElement1.onclick = loadStartScene;
+
+    optionButtonElement2.style.display = "none";
+    optionButtonElement3.style.display = "none";
+
 };
 /**Vill du inte byta något med sjöljungfrun så får du inte fortsätta ner i grottan. */
 function angryMermaid(){
-    document.getElementById("option-buttons").replaceWith("");
-    textElement. textContent = "Sjöljungs frun blir sur och låter dig inte fortsätta ner i grottan... 'ctrl + r' för att börja om.";
+    textElement. textContent = "Sjöljungs frun blir sur och låter dig inte fortsätta ner i grottan...";
+
+    optionButtonElement1.textContent = "Restart";
+    optionButtonElement1.onclick = loadStartScene;
+
+    optionButtonElement2.style.display = "none";
+    optionButtonElement3.style.display = "none";
 };
 
 

@@ -28,12 +28,24 @@ function loadScene4(){
 
 /**Bytte du tidigare mot slöld eller treudd så kommer du inte vidare. Tog du kompisens dykartub så kommer slut scenen*/
 function anvandeSkold(){
-    document.getElementById("option-buttons").replaceWith("");
-    textElement.textContent = "Hajen skrattar åt dig när du gömmer dig bakom skölden och äter dig. 'ctrl + r' för att börja om.";
+    textElement.textContent = "Hajen skrattar åt dig när du gömmer dig bakom skölden och äter dig.";
+    bytteSkoldMotTub = false;
+
+    optionButtonElement1.textContent = "Restart";
+    optionButtonElement1.onclick = loadStartScene;
+
+    optionButtonElement2.style.display = "none";
+    optionButtonElement3.style.display = "none";
 };
 function anvandeTreudd(){
-    document.getElementById("option-buttons").replaceWith("");
-    textElement.textContent = "Trodde du verkligen att hajen skulle dö av treudden. Hajen biter av treudden på mitten. 'ctrl + r' för att börja om."
+    textElement.textContent = "Trodde du verkligen att hajen skulle dö av treudden. Hajen biter av treudden på mitten."
+    bytteTreuddMotTub = false;
+
+    optionButtonElement1.textContent = "Restart";
+    optionButtonElement1.onclick = loadStartScene;
+
+    optionButtonElement2.style.display = "none";
+    optionButtonElement3.style.display = "none";
 };
 function anvandeTub(){
     textElement.textContent = "Dykartuben glider fram till hajen. Tuben har ett rejält övertrycket och i perfekt timing exploderar tuben och dödar hajen."
